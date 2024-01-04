@@ -2,20 +2,51 @@
 
 // Small devices (landscape phones, less than 768px)
 @include media-breakpoint-down(sm) {
-	//Custom Styles HERE
+	.container {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.port-item {
+		i {
+			padding-bottom: 1rem;
+		}
+
+		&:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
 }
 
 // Medium devices (tablets, less than 992px)
 @include media-breakpoint-down(md) {
-	//Custom Styles HERE
+	.container {
+		max-width: 100%;
+		margin: 0;
+		padding: 0;
+	}
 }
 
 // Large devices (desktops, less than 1200px)
-@include media-breakpoint-down(lg) {
-	//Custom Styles HERE
+@include media-breakpoint-up(lg) {
+	.port-item {
+		i {
+			padding-top: 2rem;
+		}
+
+		span {
+			padding-bottom: 2rem;
+		}
+
+		&:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
 }
 
 // X-Large devices (large desktops, less than 1400px)
 @include media-breakpoint-down(xl) {
-	//Custom Styles HERE
 }

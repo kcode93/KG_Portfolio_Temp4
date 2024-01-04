@@ -1,0 +1,33 @@
+#main-header {
+	img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.port-item-list {
+		//border: 1px solid green;
+		display: flex;
+		align-items: stretch;
+	}
+
+	.port-item {
+		width: 30%;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		//border: 1px solid red;
+
+		i {
+			padding-top: 2rem;
+		}
+
+		span {
+			padding-bottom: 2rem;
+		}
+
+		&:hover {
+			opacity: 0.8;
+			cursor: pointer;
+		}
+	}
+}
