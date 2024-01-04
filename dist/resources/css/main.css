@@ -9317,6 +9317,10 @@ textarea.form-control-lg {
     font-size: 1.2rem;
     font-weight: bold; }
 
+#resume .card {
+  border-radius: 0;
+  border: none; }
+
 /** Modules **/
 .bg-black {
   color: #fff;
@@ -9329,6 +9333,9 @@ textarea.form-control-lg {
 .Show {
   opacity: 1;
   display: block; }
+
+.bg-comp {
+  background-color: #ccc; }
 
 /** Media queries **/
 /** X-Small devices (portrait phones, less than 576px) **/
