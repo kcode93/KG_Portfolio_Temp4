@@ -1,0 +1,16 @@
+#home {
+	.card {
+		border-radius: 0;
+		border: none;
+	}
+
+	.progress {
+		height: 35px;
+		margin-bottom: 0.5rem;
+
+		.progress-bar {
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+}

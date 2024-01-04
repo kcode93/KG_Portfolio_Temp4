@@ -9305,13 +9305,17 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   height: 100%; }
-  #main-header .port-item i {
-    padding-top: 2rem; }
-  #main-header .port-item span {
-    padding-bottom: 2rem; }
-  #main-header .port-item:hover {
-    opacity: 0.8;
-    cursor: pointer; }
+
+#home .card {
+  border-radius: 0;
+  border: none; }
+
+#home .progress {
+  height: 35px;
+  margin-bottom: 0.5rem; }
+  #home .progress .progress-bar {
+    font-size: 1.2rem;
+    font-weight: bold; }
 
 /** Modules **/
 .bg-black {

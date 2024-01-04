@@ -16,18 +16,5 @@
 		flex-direction: column;
 		height: 100%;
 		//border: 1px solid red;
-
-		i {
-			padding-top: 2rem;
-		}
-
-		span {
-			padding-bottom: 2rem;
-		}
-
-		&:hover {
-			opacity: 0.8;
-			cursor: pointer;
-		}
 	}
 }
