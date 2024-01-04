@@ -15,6 +15,14 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<!--Ekko-lightbox-CDN-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+			integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
 		<title>Welcom to my Portfolio</title>
@@ -350,6 +358,102 @@
 				</div>
 			</div>
 
+			<!--Projects-->
+			<div id="work" class="collapse">
+				<div class="card card-body bg-warning text-white py-5">
+					<h2>My Work</h2>
+					<p class="lead">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+						adipisci error, laboriosam consectetur accusamus eligendi amet ut
+						explicabo enim nam?
+					</p>
+				</div>
+
+				<div class="card card-body py-5">
+					<h3>Check out some of my Projects!</h3>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste dolor
+						soluta dignissimos dolorum enim consequuntur culpa natus aliquam
+						corporis. Voluptatibus?
+					</p>
+					<div class="row g-0">
+						<div class="col">
+							<div class="row g-0">
+								<a
+									href="https://unsplash.it/1200/768.jpg?image=251"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										src="https://unsplash.it/600.jpg?image=251"
+										class="img-fluid"
+									/>
+								</a>
+								<a
+									href="https://unsplash.it/1200/768.jpg?image=252"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										src="https://unsplash.it/600.jpg?image=252"
+										class="img-fluid"
+									/>
+								</a>
+								<a
+									href="https://unsplash.it/1200/768.jpg?image=253"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										src="https://unsplash.it/600.jpg?image=253"
+										class="img-fluid"
+									/>
+								</a>
+							</div>
+
+							<div class="row g-0">
+								<a
+									href="https://unsplash.it/1200/768.jpg?image=254"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										src="https://unsplash.it/600.jpg?image=254"
+										class="img-fluid"
+									/>
+								</a>
+								<a
+									href="https://unsplash.it/1200/768.jpg?image=255"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										src="https://unsplash.it/600.jpg?image=255"
+										class="img-fluid"
+									/>
+								</a>
+								<a
+									href="https://unsplash.it/1200/768.jpg?image=256"
+									data-toggle="lightbox"
+									data-gallery="example-gallery"
+									class="col-sm-4"
+								>
+									<img
+										src="https://unsplash.it/600.jpg?image=256"
+										class="img-fluid"
+									/>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!--footer-->
 			<footer id="main-footer" class="p-5 bg-dark text-white">
 				<div class="row">
@@ -380,13 +484,25 @@
 			integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
 			crossorigin="anonymous"
 		></script>
+		<!--EKKO Lightbox JS-->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"
+			integrity="sha512-YibiFIKqwi6sZFfPm5HNHQYemJwFbyyYHjrr3UT+VobMt/YBo1kBxgui5RWc4C3B4RJMYCdCAJkbXHt+irKfSA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+
 		<!-- Custom JS Scripts -->
 		<script>
 			//produces toggle effect on collapse items one for one effect
-			$(document).ready(function () {
-				$('.port-item').click(function () {
-					$('.collapse').collapse('hide');
-				});
+			$('.port-item').click(function () {
+				$('.collapse').collapse('hide');
+			});
+
+			//Ekko lightbox
+			$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
 			});
 		</script>
 	</body>

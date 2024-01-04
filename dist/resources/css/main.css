@@ -9321,6 +9321,11 @@ textarea.form-control-lg {
   border-radius: 0;
   border: none; }
 
+#work .card {
+  border-radius: 0;
+  border: none;
+  border-radius: 0%; }
+
 /** Modules **/
 .bg-black {
   color: #fff;
