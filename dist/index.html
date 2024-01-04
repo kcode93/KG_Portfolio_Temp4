@@ -17,7 +17,7 @@
 		/>
 		<!--Custom style sheets-->
 		<link rel="stylesheet" href="./resources/css/main.css" type="text/css" />
-		<title>Title-Here</title>
+		<title>Welcom to my Portfolio</title>
 	</head>
 	<body>
 		<div class="container">
@@ -107,6 +107,7 @@
 				</div>
 			</header>
 
+			<!--Home Section-->
 			<div id="home" class="collapse show">
 				<div class="card card-body bg-primary text-white py-5">
 					<h2>Welcome to my Page</h2>
@@ -221,6 +222,12 @@
 				</div>
 			</div>
 
+			<div id="resume" class="collapse">
+				<div class="card card-body bg-success text-white py-5">
+					<h2>My Resume</h2>
+				</div>
+			</div>
+
 			<!--footer-->
 			<footer id="main-footer" class="p-5 bg-dark text-white">
 				<div class="row">
@@ -233,6 +240,13 @@
 			</footer>
 		</div>
 
+		<!-- Jquery-->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
 		<!-- Bootstrap JS & Popper JS -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -245,6 +259,13 @@
 			crossorigin="anonymous"
 		></script>
 		<!-- Custom JS Scripts -->
-		<script src="./resources/js/main.js"></script>
+		<script>
+			//produces toggle effect on collapse items one for one effect
+			$(document).ready(function () {
+				$('.port-item').click(function () {
+					$('.collapse').collapse('hide');
+				});
+			});
+		</script>
 	</body>
 </html>

@@ -9322,6 +9322,14 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #000; }
 
+.Hide {
+  opacity: 0;
+  display: none; }
+
+.Show {
+  opacity: 1;
+  display: block; }
+
 /** Media queries **/
 /** X-Small devices (portrait phones, less than 576px) **/
 @media (max-width: 575.98px) {
